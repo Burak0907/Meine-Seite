@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burak Besevli | Softwareentwickler</title>
+    <meta name="description" content="Portfolio von Burak Besevli, Informatik-Student und Softwareentwickler aus Dortmund.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-bg blob-1"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <nav class="navbar">
+        <div class="logo">BB.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#github">Aktivität</a></li>
+            <li><a href="#stack">Tech-Stack</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <span class="greeting">Hallo, ich bin</span>
+                <h1 class="glitch" data-text="Burak Besevli">Burak Besevli</h1>
+                <p class="subtitle">
+                    Informatik-Student an der FH Dortmund & Softwareentwickler
+                </p>
+                <p class="description">
+                    Fokus auf <strong>Java-Backend</strong>, <strong>Datenbanken (SQL)</strong> und <strong>Prozessautomatisierung</strong>. Ich baue effiziente, skalierbare und zukunftssichere Systeme.
+                </p>
+                <div class="hero-cta">
+                    <a href="mailto:burak0907@hotmail.de" class="btn btn-primary">
+                        Kontakt aufnehmen <i class='bx bx-send'></i>
+                    </a>
+                    <a href="Lebenslauf_Burak_Besevli.pdf" target="_blank" class="btn btn-secondary">
+                        Lebenslauf (PDF) <i class='bx bx-download'></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-placeholder">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section fade-in">
+            <div class="section-header">
+                <h2>Meine Projekte</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass">
+                    <div class="project-icon">
+                        <i class='bx bx-cube-alt'></i>
+                    </div>
+                    <h3>Gleiswacht-App</h3>
+                    <p>
+                        Entwicklung eines digitalen Lagersystems im agilen Team. Backend-Logik und Architektur maßgeblich durch AI-Assisted Development generiert. Organisiert via Jira & Git.
+                    </p>
+                    <div class="project-tags">
+                        <span>Backend</span>
+                        <span>AI-Assisted</span>
+                        <span>Agile</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass">
+                    <div class="project-icon">
+                        <i class='bx bx-store-alt'></i>
+                    </div>
+                    <h3>E-Commerce Optimierung</h3>
+                    <p>
+                        Technisches SEO, Systempflege und KI-gestütztes Bild-Upscaling für den Shopify-Shop <a href="https://darassalam.de/" target="_blank" style="color: var(--accent-color); text-decoration: none; font-weight: 500;">Dar-Assalam <i class='bx bx-link-external' style="font-size: 0.8em;"></i></a>.
+                    </p>
+                    <div class="project-tags">
+                        <span>SEO</span>
+                        <span>Shopify</span>
+                        <span>KI-Upscaling</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Activity Section -->
+        <section id="github" class="github-section fade-in">
+            <div class="section-header">
+                <h2>GitHub Activity</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="github-container glass">
+                <div class="github-stats">
+                    <div class="stat-box">
+                        <i class='bx bxl-github'></i>
+                        <div class="stat-info">
+                            <h4 id="github-total">Lade...</h4>
+                            <p>Contributions im letzten Jahr</p>
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <i class='bx bx-run'></i>
+                        <div class="stat-info">
+                            <h4 id="github-streak">Lade...</h4>
+                            <p>Tage aktueller Streak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="github-graph-placeholder">
+                    <div class="mock-graph">
+                        <div class="graph-grid" id="github-graph"></div>
+                    </div>
+                    <div class="graph-caption">Echtzeit-Daten von GitHub @Burak0907</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="stack" class="stack-section fade-in">
+            <div class="section-header">
+                <h2>Tech-Stack & Stärken</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="stack-container">
+                <div class="stack-item glass" data-title="Java Backend" data-text="1,5 Jahre Praxiserfahrung in der Backend-Entwicklung. Fokus auf saubere Code-Architektur und die Implementierung funktionaler Logik. Erfolgreich angewandt bei der Weiterentwicklung eines umfassenden Warenwirtschaftssystems.">
+                    <i class='bx bxl-java'></i>
+                    <span>Java</span>
+                </div>
+                <div class="stack-item glass" data-title="Datenbanken (SQL)" data-text="Sicherer Umgang mit relationalen Datenbanken, insbesondere MySQL. Erfahrung in der Strukturierung von Datenmodellen und dem Schreiben effizienter Abfragen für komplexe Backend-Systeme.">
+                    <i class='bx bxs-data'></i>
+                    <span>SQL</span>
+                </div>
+                <div class="stack-item glass" data-title="Git & Versionskontrolle" data-text="Routiniert in der professionellen Code-Verwaltung im Entwickler-Team. Tägliche Nutzung von Git und GitHub Desktop zur sauberen Versionskontrolle, kombiniert mit agiler Projektorganisation über Jira.">
+                    <i class='bx bxl-git'></i>
+                    <span>Git</span>
+                </div>
+                <div class="stack-item glass" data-title="Process Automation" data-text="Identifikation und digitale Optimierung manueller Workflows. Pilotprojekt: Automatisierung von Dokumenten-Scan- und Sortierprozessen mittels Power Automate zur Steigerung der Effizienz im operativen Betrieb (inkl. Handling von OCR-Schnittstellen).">
+                    <i class='bx bx-cog'></i>
+                    <span>Process Automation</span>
+                </div>
+                <div class="stack-item glass" data-title="AI-Assisted Development" data-text="Gezielter Einsatz von Prompt Engineering zur Beschleunigung der Softwareentwicklung. Praktisch angewandt bei der Architektur- und Logik-Generierung der Gleiswacht-App sowie für automatisiertes Image-Upscaling im E-Commerce.">
+                    <i class='bx bx-brain'></i>
+                    <span>AI-Assisted Dev<br><small>(Prompt Eng.)</small></span>
+                </div>
+            </div>
+            
+            <!-- Detail Container for Tech Stack -->
+            <div id="stack-detail" class="stack-detail glass" style="display: none; opacity: 0; transform: translateY(10px); transition: all 0.3s ease;">
+                <h3 id="stack-detail-title">Titel</h3>
+                <p id="stack-detail-text">Beschreibung</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h2>Lassen Sie uns vernetzen.</h2>
+            <div class="social-links">
+                <!-- LinkedIn Profil -->
+                <a href="https://www.linkedin.com/in/burak-besevli/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                    <span>LinkedIn Profil</span>
+                </a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Burak Besevli. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
