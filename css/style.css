@@ -269,19 +269,19 @@ section {
     align-items: center;
 }
 
-.profile-placeholder {
+.profile-image {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6rem;
-    color: var(--accent-color);
+    object-fit: cover;
+    border: 3px solid var(--accent-color);
     box-shadow: var(--glass-shadow);
     animation: pulse 4s infinite alternate;
+    transition: var(--transition);
+}
+
+.profile-image:hover {
+    transform: scale(1.02);
 }
 
 @keyframes pulse {
